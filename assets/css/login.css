@@ -1,0 +1,126 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+
+*{
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: url(../img/cielo1.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+
+/*session*/
+.login-box{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0, 0.6);
+  border: 1px solid #fff;
+  border-radius: 2em;
+}
+
+.login-box h2{
+  margin: 0 0 30px;
+  padding: 0;
+  color: white;
+  text-align: start;
+}
+
+.login-box .user-box{
+  position: relative;
+}
+
+.login-box .user-box input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid wheat;
+  outline: none;
+  background-color: transparent;
+}
+
+.login-box .user-box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  pointer-events: none;
+  transform: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: aqua;
+  font-size: 12px;
+}
+
+.login-box form a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.efect{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #03e9f4;
+  font-weight: bold;
+  
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.login-box a.efect:hover{
+  background-color: #03e9f4;
+  color: white;
+  /* border: 5px; */
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 500px #03e9f4;
+              -webkit-box-reflect: below 12px  linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.254));
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+}
+
